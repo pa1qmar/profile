@@ -1,0 +1,7 @@
+.footer-link {
+  @apply text-gray-400 hover:text-gray-500 transition-colors duration-200;
+}
+
+.footer-container {
+  @apply max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8;
+}

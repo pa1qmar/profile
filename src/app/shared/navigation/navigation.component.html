@@ -1,0 +1,49 @@
+<nav class="bg-white border-b border-gray-100">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <div class="flex">
+        <a routerLink="/" class="animated-border flex items-center font-semibold text-gray-900">PK.B</a>
+      </div>
+      <div class="hidden sm:flex sm:space-x-8">
+        <a routerLink="/" routerLinkActive="text-blue-600" [routerLinkActiveOptions]="{exact: true}" 
+          class="nav-link animated-border">Home</a>
+        <a routerLink="/about" routerLinkActive="text-blue-600" 
+          class="nav-link animated-border">About</a>
+        <a routerLink="/expertise" routerLinkActive="text-blue-600"
+          class="nav-link animated-border">Expertise</a>
+        <a routerLink="/portfolio" routerLinkActive="text-blue-600"
+          class="nav-link animated-border">Portfolio</a>
+        <a routerLink="/blog" routerLinkActive="text-blue-600"
+          class="nav-link animated-border">Blog</a>
+        <a routerLink="/contact" routerLinkActive="text-blue-600"
+          class="nav-link animated-border">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sm:hidden">
+    <button (click)="menuToggle.emit()" class="menu-button">
+      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path [attr.d]="isMenuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'" 
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </svg>
+    </button>
+  </div>
+
+  <div [class.hidden]="!isMenuOpen" class="sm:hidden">
+    <div class="pt-2 pb-3 space-y-1 bg-white border-b border-gray-100">
+      <a routerLink="/" (click)="menuToggle.emit()" routerLinkActive="bg-blue-50 text-blue-600" 
+        [routerLinkActiveOptions]="{exact: true}" class="mobile-nav-link">Home</a>
+      <a routerLink="/about" (click)="menuToggle.emit()" routerLinkActive="bg-blue-50 text-blue-600"
+        class="mobile-nav-link">About</a>
+      <a routerLink="/expertise" (click)="menuToggle.emit()" routerLinkActive="bg-blue-50 text-blue-600"
+        class="mobile-nav-link">Expertise</a>
+      <a routerLink="/portfolio" (click)="menuToggle.emit()" routerLinkActive="bg-blue-50 text-blue-600"
+        class="mobile-nav-link">Portfolio</a>
+      <a routerLink="/blog" (click)="menuToggle.emit()" routerLinkActive="bg-blue-50 text-blue-600"
+        class="mobile-nav-link">Blog</a>
+      <a routerLink="/contact" (click)="menuToggle.emit()" routerLinkActive="bg-blue-50 text-blue-600"
+        class="mobile-nav-link">Contact</a>
+    </div>
+  </div>
+</nav>
