@@ -9,33 +9,33 @@ import { CommonModule } from '@angular/common';
   template: `
     <div class="min-h-screen bg-gray-50">
       <!-- Navigation -->
-      <nav class="bg-white shadow-lg">
-        <div class="max-w-7xl mx-auto px-4">
+      <nav class="bg-white border-b border-gray-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex justify-between h-16">
             <div class="flex">
-              <div class="flex-shrink-0 flex items-center">
-                <span class="text-xl font-bold text-gray-800">PK.B</span>
-              </div>
-              <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                <a routerLink="/" routerLinkActive="border-blue-500 text-gray-900" [routerLinkActiveOptions]="{exact: true}" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                  Home
-                </a>
-                <a routerLink="/about" routerLinkActive="border-blue-500 text-gray-900" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                  About
-                </a>
-                <a routerLink="/expertise" routerLinkActive="border-blue-500 text-gray-900" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                  Expertise
-                </a>
-                <a routerLink="/portfolio" routerLinkActive="border-blue-500 text-gray-900" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                  Portfolio
-                </a>
-                <a routerLink="/blog" routerLinkActive="border-blue-500 text-gray-900" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                  Blog
-                </a>
-                <a routerLink="/contact" routerLinkActive="border-blue-500 text-gray-900" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                  Contact
-                </a>
-              </div>
+              <a routerLink="/" class="flex items-center font-semibold text-gray-900">PK.B</a>
+            </div>
+            <div class="hidden sm:flex sm:space-x-8">
+              <a routerLink="/" routerLinkActive="text-blue-600" [routerLinkActiveOptions]="{exact: true}" 
+                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900">
+                Home
+              </a>
+              <a routerLink="/about" routerLinkActive="text-blue-600"
+                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900">
+                About
+              </a>
+              <a routerLink="/expertise" routerLinkActive="text-blue-600"
+                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900">
+                Expertise
+              </a>
+              <a routerLink="/portfolio" routerLinkActive="text-blue-600"
+                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900">
+                Portfolio
+              </a>
+              <a routerLink="/contact" routerLinkActive="text-blue-600"
+                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900">
+                Contact
+              </a>
             </div>
           </div>
         </div>
@@ -47,17 +47,17 @@ import { CommonModule } from '@angular/common';
       </main>
 
       <!-- Footer -->
-      <footer class="bg-gray-800 text-white">
-        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+      <footer class="bg-white border-t border-gray-100">
+        <div class="max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div class="flex justify-between items-center">
-            <div>
-              <p>&copy; 2025 Pavan Kumar Banala. All rights reserved.</p>
+            <div class="text-gray-500 text-sm">
+              &copy; 2025 Pavan Kumar Banala
             </div>
             <div class="flex space-x-6">
-              <a href="https://linkedin.com" target="_blank" class="text-gray-300 hover:text-white">
+              <a href="https://www.linkedin.com/in/pavan-banala/" target="_blank" class="text-gray-400 hover:text-gray-500">
                 LinkedIn
               </a>
-              <a href="mailto:contact@example.com" class="text-gray-300 hover:text-white">
+              <a href="mailto:pavan.bww@gmail.com" class="text-gray-400 hover:text-gray-500">
                 Email
               </a>
             </div>

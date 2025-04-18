@@ -15,6 +15,25 @@ import { CommonModule } from '@angular/common';
           </p>
         </div>
 
+        <!-- Certifications Banner -->
+        <div class="mb-16 bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-8">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Professional Certifications</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h4 class="text-lg font-semibold text-gray-900 mb-2">MuleSoft Certified Platform Architect - Level 1</h4>
+              <p class="text-gray-600">Advanced expertise in MuleSoft architecture and design patterns</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h4 class="text-lg font-semibold text-gray-900 mb-2">MuleSoft Certified Developer - Level 1</h4>
+              <p class="text-gray-600">Proficient in MuleSoft development and best practices</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h4 class="text-lg font-semibold text-gray-900 mb-2">AWS Certified Solutions Architect</h4>
+              <p class="text-gray-600">Expert in cloud architecture and AWS services</p>
+            </div>
+          </div>
+        </div>
+
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           <!-- MuleSoft -->
           <div class="bg-gray-50 p-6 rounded-lg shadow-sm">

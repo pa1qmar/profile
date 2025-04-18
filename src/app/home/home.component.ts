@@ -7,72 +7,123 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterModule],
   template: `
-    <div class="bg-gradient-to-r from-blue-500 to-blue-700 text-white">
-      <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <h1 class="text-4xl font-extrabold sm:text-5xl md:text-6xl">
-            Pavan Kumar Banala
-          </h1>
-          <p class="mt-3 max-w-md mx-auto text-base sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-            Application Integration Solutions Architect
-          </p>
-          <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
-            <div class="rounded-md shadow">
-              <a routerLink="/portfolio" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
-                View Portfolio
-              </a>
+    <!-- Hero Section with minimalist design -->
+    <div class="min-h-[80vh] flex items-center justify-center bg-gradient-to-b from-white to-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-5xl sm:text-6xl font-bold text-gray-900 tracking-tight mb-6">
+          Pavan Kumar Banala
+        </h1>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-12">
+          MuleSoft Technical Architect specializing in enterprise integration solutions that drive digital transformation.
+        </p>
+        <div class="flex justify-center gap-6">
+          <a routerLink="/portfolio" 
+            class="group inline-flex items-center px-6 py-3 text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 transition-all duration-200 transform hover:scale-105">
+            View Portfolio
+            <svg class="ml-2 w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+          <a routerLink="/contact"
+            class="inline-flex items-center px-6 py-3 text-base font-medium rounded-lg text-gray-700 bg-white border border-gray-200 hover:border-blue-500 hover:text-blue-600 transition-all duration-200">
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Work with hover interactions -->
+    <div class="py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 text-center mb-4">Featured Work</h2>
+        <p class="text-gray-600 text-center mb-16 max-w-2xl mx-auto">
+          Delivering enterprise-grade integration solutions that drive business transformation
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Healthcare Project -->
+          <div class="group relative bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden">
+            <div class="p-6">
+              <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-700 opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-200">
+                Healthcare API Platform
+              </h3>
+              <p class="text-gray-600 mb-4">
+                FHIR-compliant healthcare integration platform enabling secure patient data exchange with 50% faster access times.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 text-sm bg-gray-100 text-gray-600 rounded-full">MuleSoft</span>
+                <span class="px-3 py-1 text-sm bg-gray-100 text-gray-600 rounded-full">FHIR</span>
+                <span class="px-3 py-1 text-sm bg-gray-100 text-gray-600 rounded-full">OAuth 2.0</span>
+              </div>
             </div>
-            <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-              <a routerLink="/contact" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-800 hover:bg-blue-900 md:py-4 md:text-lg md:px-10">
-                Contact Me
-              </a>
+          </div>
+
+          <!-- Banking Project -->
+          <div class="group relative bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden">
+            <div class="p-6">
+              <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-700 opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-200">
+                Banking Integration Hub
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Real-time transaction processing system handling over $2B in daily transactions with 99.99% uptime.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 text-sm bg-gray-100 text-gray-600 rounded-full">MuleSoft</span>
+                <span class="px-3 py-1 text-sm bg-gray-100 text-gray-600 rounded-full">ISO20022</span>
+                <span class="px-3 py-1 text-sm bg-gray-100 text-gray-600 rounded-full">SWIFT</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Expertise Overview -->
-    <div class="py-12 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="lg:text-center">
-          <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Expertise</h2>
-          <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Enterprise Integration Solutions
-          </p>
-        </div>
+    <!-- Expertise Section with micro-interactions -->
+    <div class="py-24 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 text-center mb-4">Core Expertise</h2>
+        <p class="text-gray-600 text-center mb-16 max-w-2xl mx-auto">
+          Specialized in creating robust enterprise integration solutions
+        </p>
 
-        <div class="mt-10">
-          <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-            <div class="relative">
-              <dt>
-                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
-                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">MuleSoft Development</p>
-              </dt>
-              <dd class="mt-2 ml-16 text-base text-gray-500">
-                Expert in designing and implementing MuleSoft solutions for enterprise integration.
-              </dd>
-            </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="group p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+            <h3 class="text-lg font-semibold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-200">
+              MuleSoft Development
+            </h3>
+            <p class="text-gray-600">Expert in API-led connectivity and integration patterns</p>
+          </div>
 
-            <div class="relative">
-              <dt>
-                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
-                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                  </svg>
-                </div>
-                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">API Design</p>
-              </dt>
-              <dd class="mt-2 ml-16 text-base text-gray-500">
-                Creating robust and scalable API architectures following best practices.
-              </dd>
-            </div>
-          </dl>
+          <div class="group p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+            <h3 class="text-lg font-semibold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-200">
+              Architecture Design
+            </h3>
+            <p class="text-gray-600">Creating scalable enterprise integration solutions</p>
+          </div>
+
+          <div class="group p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+            <h3 class="text-lg font-semibold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-200">
+              API Strategy
+            </h3>
+            <p class="text-gray-600">Designing secure and efficient API ecosystems</p>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Ready to Transform Your Integration Landscape?</h2>
+        <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+          Let's discuss how we can optimize your enterprise integration strategy
+        </p>
+        <a routerLink="/contact"
+          class="inline-flex items-center px-8 py-4 text-lg font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 transition-all duration-200 transform hover:scale-105">
+          Schedule a Consultation
+        </a>
       </div>
     </div>
   `
