@@ -32,6 +32,10 @@ import { CommonModule } from '@angular/common';
                 class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900">
                 Portfolio
               </a>
+              <a routerLink="/blog" routerLinkActive="text-blue-600"
+                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900">
+                Blog
+              </a>
               <a routerLink="/contact" routerLinkActive="text-blue-600"
                 class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900">
                 Contact
