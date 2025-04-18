@@ -9,33 +9,36 @@ import { CommonModule } from '@angular/common';
     <div class="bg-white py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="lg:text-center mb-12">
-          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Technical Expertise</h2>
-          <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-4">
+            Technical Expertise
+          </h2>
+          <p class="mt-4 max-w-2xl text-xl text-gray-700 lg:mx-auto">
             Comprehensive skills in enterprise integration and architecture
           </p>
         </div>
 
-        <!-- Certifications Banner -->
-        <div class="mb-16 bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-8">
-          <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Professional Certifications</h3>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-              <h4 class="text-lg font-semibold text-gray-900 mb-2">MuleSoft Certified Platform Architect - Level 1</h4>
-              <p class="text-gray-600">Advanced expertise in MuleSoft architecture and design patterns</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-              <h4 class="text-lg font-semibold text-gray-900 mb-2">MuleSoft Certified Developer - Level 1</h4>
-              <p class="text-gray-600">Proficient in MuleSoft development and best practices</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-              <h4 class="text-lg font-semibold text-gray-900 mb-2">AWS Certified Solutions Architect</h4>
-              <p class="text-gray-600">Expert in cloud architecture and AWS services</p>
+        <div class="max-w-4xl mx-auto">
+          <!-- Certifications Banner -->
+          <div class="glass-effect p-8 rounded-lg shadow-sm mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Professional Certifications</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div class="skill-badge p-6 rounded-lg hover:shadow-lg">
+                <h4 class="text-lg font-semibold text-gray-900 mb-2">MuleSoft Certified Platform Architect - Level 1</h4>
+                <p class="text-gray-700">Advanced expertise in MuleSoft architecture and design patterns</p>
+              </div>
+              <div class="skill-badge p-6 rounded-lg hover:shadow-lg">
+                <h4 class="text-lg font-semibold text-gray-900 mb-2">MuleSoft Certified Developer - Level 1</h4>
+                <p class="text-gray-700">Proficient in MuleSoft development and best practices</p>
+              </div>
+              <div class="skill-badge p-6 rounded-lg hover:shadow-lg">
+                <h4 class="text-lg font-semibold text-gray-900 mb-2">AWS Certified Solutions Architect</h4>
+                <p class="text-gray-700">Expert in cloud architecture and AWS services</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <!-- MuleSoft -->
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <!-- MuleSoft -->
           <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
             <h3 class="text-xl font-bold text-gray-900 mb-4">MuleSoft Expertise</h3>
             <ul class="space-y-2 text-gray-600">

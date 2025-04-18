@@ -7,13 +7,12 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterModule],
   template: `
-    <!-- Hero Section with minimalist design -->
     <div class="min-h-[80vh] flex items-center justify-center bg-gradient-to-b from-white to-gray-50">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-5xl sm:text-6xl font-bold text-gray-900 tracking-tight mb-6">
+        <h1 class="text-5xl sm:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 animate-text-shimmer animate-fade-in hover:scale-105 transition-transform duration-300">
           Pavan Kumar Banala
         </h1>
-        <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-12">
+        <p class="text-xl text-gray-700 max-w-2xl mx-auto mb-12">
           MuleSoft Technical Architect specializing in enterprise integration solutions that drive digital transformation.
         </p>
         <div class="flex justify-center gap-6">
@@ -32,11 +31,11 @@ import { RouterModule } from '@angular/router';
       </div>
     </div>
 
-    <!-- Featured Work with hover interactions -->
+    <!-- Featured Work Section -->
     <div class="py-24 bg-white">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 text-center mb-4">Featured Work</h2>
-        <p class="text-gray-600 text-center mb-16 max-w-2xl mx-auto">
+        <h2 class="gradient-text text-3xl font-bold text-center mb-4">Featured Work</h2>
+        <p class="text-gray-700 text-center mb-16 max-w-2xl mx-auto">
           Delivering enterprise-grade integration solutions that drive business transformation
         </p>
 

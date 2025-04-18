@@ -9,13 +9,15 @@ import { CommonModule } from '@angular/common';
     <div class="bg-white py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="lg:text-center mb-12">
-          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Project Portfolio</h2>
-          <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-4">
+            Project Portfolio
+          </h2>
+          <p class="mt-4 max-w-2xl text-xl text-gray-700 lg:mx-auto">
             Showcasing successful enterprise integration projects
           </p>
         </div>
 
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 gap-8 md:grid-cols-2">
           <!-- Retail Integration Project -->
           <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
             <h3 class="text-xl font-bold text-gray-900 mb-4">Retail Integration Platform</h3>

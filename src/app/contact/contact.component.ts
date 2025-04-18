@@ -10,39 +10,41 @@ import { FormsModule } from '@angular/forms';
     <div class="bg-white py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="lg:text-center mb-12">
-          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Get in Touch</h2>
-          <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-4">
+            Get in Touch
+          </h2>
+          <p class="mt-4 max-w-2xl text-xl text-gray-700 lg:mx-auto">
             Let's discuss how I can help with your integration challenges
           </p>
         </div>
 
         <div class="max-w-3xl mx-auto">
           <form class="grid grid-cols-1 gap-6">
-            <div>
-              <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+          <div class="glass-effect p-8 rounded-lg shadow-sm">
+          <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
               <input type="text" name="name" id="name" 
                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
             </div>
 
-            <div>
+            <div class="glass-effect p-8 rounded-lg shadow-sm">
               <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
               <input type="email" name="email" id="email" 
                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
             </div>
 
-            <div>
+            <div class="glass-effect p-8 rounded-lg shadow-sm">
               <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
               <input type="text" name="subject" id="subject" 
                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
             </div>
 
-            <div>
+            <div class="glass-effect p-8 rounded-lg shadow-sm">
               <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
               <textarea name="message" id="message" rows="4" 
                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"></textarea>
             </div>
 
-            <div>
+            <div class="glass-effect p-8 rounded-lg shadow-sm">
               <button type="submit" 
                 class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                 Send Message
