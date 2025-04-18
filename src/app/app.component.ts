@@ -57,7 +57,32 @@ import { CommonModule } from '@angular/common';
 
         <!-- Mobile menu -->
         <div [class.hidden]="!mobileMenuOpen" class="sm:hidden">
-          <!-- Add mobile menu items -->
+          <div class="pt-2 pb-3 space-y-1 bg-white border-b border-gray-100">
+            <a routerLink="/" (click)="toggleMobileMenu()" routerLinkActive="bg-blue-50 text-blue-600" [routerLinkActiveOptions]="{exact: true}"
+              class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50">
+              Home
+            </a>
+            <a routerLink="/about" (click)="toggleMobileMenu()" routerLinkActive="bg-blue-50 text-blue-600"
+              class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50">
+              About
+            </a>
+            <a routerLink="/expertise" (click)="toggleMobileMenu()" routerLinkActive="bg-blue-50 text-blue-600"
+              class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50">
+              Expertise
+            </a>
+            <a routerLink="/portfolio" (click)="toggleMobileMenu()" routerLinkActive="bg-blue-50 text-blue-600"
+              class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50">
+              Portfolio
+            </a>
+            <a routerLink="/blog" (click)="toggleMobileMenu()" routerLinkActive="bg-blue-50 text-blue-600"
+              class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50">
+              Blog
+            </a>
+            <a routerLink="/contact" (click)="toggleMobileMenu()" routerLinkActive="bg-blue-50 text-blue-600"
+              class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50">
+              Contact
+            </a>
+          </div>
         </div>
       </nav>
 
