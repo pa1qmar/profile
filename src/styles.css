@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Force scrollbar to always be present to prevent layout shifts */
+html {
+  overflow-y: scroll;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  position: relative;
+}
+
 /* Custom utility classes */
 .gradient-text {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800;
