@@ -6,8 +6,8 @@ import { RouterModule } from '@angular/router';
   selector: 'app-navigation',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  templateUrl: './navigation.component.html',
-  styleUrls: ['./navigation.component.css']
+  templateUrl: './navigation.component.html'
+  // Removed styleUrls reference as it's using global styles
 })
 export class NavigationComponent {
   @Input() isMenuOpen = false;
