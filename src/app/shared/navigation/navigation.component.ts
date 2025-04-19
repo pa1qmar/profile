@@ -6,10 +6,16 @@ import { RouterModule } from '@angular/router';
   selector: 'app-navigation',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  templateUrl: './navigation.component.html'
-  // Removed styleUrls reference as it's using global styles
+  templateUrl: './navigation.component.html',
+  styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent {
   @Input() isMenuOpen = false;
   @Output() menuToggle = new EventEmitter<void>();
+
+  closeMenu() {
+    if (this.isMenuOpen) {
+      this.menuToggle.emit();
+    }
+  }
 }

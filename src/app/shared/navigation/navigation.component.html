@@ -26,14 +26,20 @@
   </div>
 
   <!-- Mobile menu, show/hide based on menu state -->
-  <div class="sm:hidden" id="mobile-menu" [class.hidden]="!isMenuOpen">
-    <div class="pt-2 pb-3 space-y-1">
-      <a routerLink="/" routerLinkActive="bg-blue-50 text-blue-600" [routerLinkActiveOptions]="{exact: true}" class="text-gray-500 hover:bg-gray-50 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Home</a>
-      <a routerLink="/about" routerLinkActive="bg-blue-50 text-blue-600" class="text-gray-500 hover:bg-gray-50 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">About</a>
-      <a routerLink="/expertise" routerLinkActive="bg-blue-50 text-blue-600" class="text-gray-500 hover:bg-gray-50 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Expertise</a>
-      <a routerLink="/portfolio" routerLinkActive="bg-blue-50 text-blue-600" class="text-gray-500 hover:bg-gray-50 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Portfolio</a>
-      <a routerLink="/blog" routerLinkActive="bg-blue-50 text-blue-600" class="text-gray-500 hover:bg-gray-50 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Blog</a>
-      <a routerLink="/contact" routerLinkActive="bg-blue-50 text-blue-600" class="text-gray-500 hover:bg-gray-50 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+  <div [class.hidden]="!isMenuOpen" class="sm:hidden">
+    <div class="pt-2 pb-3 space-y-1 bg-white border-b border-gray-100">
+      <a routerLink="/" (click)="closeMenu()" routerLinkActive="bg-blue-50 text-blue-600" 
+        [routerLinkActiveOptions]="{exact: true}" class="mobile-nav-link">Home</a>
+      <a routerLink="/about" (click)="closeMenu()" routerLinkActive="bg-blue-50 text-blue-600"
+        class="mobile-nav-link">About</a>
+      <a routerLink="/expertise" (click)="closeMenu()" routerLinkActive="bg-blue-50 text-blue-600"
+        class="mobile-nav-link">Expertise</a>
+      <a routerLink="/portfolio" (click)="closeMenu()" routerLinkActive="bg-blue-50 text-blue-600"
+        class="mobile-nav-link">Portfolio</a>
+      <a routerLink="/blog" (click)="closeMenu()" routerLinkActive="bg-blue-50 text-blue-600"
+        class="mobile-nav-link">Blog</a>
+      <a routerLink="/contact" (click)="closeMenu()" routerLinkActive="bg-blue-50 text-blue-600"
+        class="mobile-nav-link">Contact</a>
     </div>
   </div>
 </nav>
